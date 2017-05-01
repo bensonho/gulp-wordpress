@@ -5,6 +5,7 @@ gulp.task "js", ->
   # Compile all coffeescript files into the js folders
   gulp.src "#{config.js.coffee}/**/*.coffee"
     .pipe coffee(bare: true)
+    .on('error', (o) -> helper.out(o))
     .pipe gulp.dest(config.js.src)
 
   # Get the list of javascript files

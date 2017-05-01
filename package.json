@@ -13,6 +13,7 @@
     "del": "*",
     "graceful-fs": "*",
     "gulp": "*",
+    "gulp-autoprefixer": "*",
     "gulp-bower": "*",
     "gulp-coffee": "*",
     "gulp-concat": "*",

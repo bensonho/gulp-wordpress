@@ -12,6 +12,7 @@ global.yargs        = require "yargs"
 
 # Gulp tasks
 global.gulp         = require "gulp"
+global.autoprefixer = require "gulp-autoprefixer"
 global.bower        = require "gulp-bower"
 global.coffee       = require "gulp-coffee"
 global.concat       = require "gulp-concat"
