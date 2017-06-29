@@ -21,8 +21,6 @@ if fs.existsSync "#{config.base}/config.yml"
   config.wordpress = objectMerge(config.wordpress, userConfig.config)
 
 
-
-
 config.wordpress.theme =
   src:  "#{config.base}/#{config.wordpress.themeFolder}"
   dest: "#{config.wordpress.folder}/wp-content/themes/#{config.wordpress.themeName}"
@@ -30,6 +28,10 @@ config.wordpress.theme =
 config.app =
   src: "#{config.wordpress.theme.src}/app"
   dest: config.wordpress.theme.dest
+
+config.icons =
+  src: "#{config.wordpress.theme.src}/icons"
+  dest: "#{config.wordpress.theme.dest}/fonts/icons"
 
 config.php =
   src:  "#{config.wordpress.theme.src}/php"

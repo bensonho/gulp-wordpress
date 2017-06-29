@@ -19,6 +19,8 @@
     "gulp-concat": "*",
     "gulp-download": "*",
     "gulp-htmlclean": "*",
+    "gulp-iconfont": "*",
+    "gulp-iconfont-css": "*",
     "gulp-if": "*",
     "gulp-imagemin": "*",
     "gulp-less": "*",

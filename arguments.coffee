@@ -14,6 +14,9 @@ args.env = if yargs.argv.e && yargs.argv.e != true then yargs.argv.e else "devel
 args.production  = args.env == "production"
 args.development = args.env == "development"
 
+# Determine whether the icons stylesheet is to be generated
+args.icons = if yargs.argv.i then true else false
+
 
 # Flags
 # TODO: Enable browser-sync

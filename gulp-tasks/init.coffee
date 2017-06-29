@@ -53,7 +53,7 @@ gulp.task "clean", (cb) ->
 gulp.task "default", (cb) ->
   helper.out "Running Default task"
 
-  gulp.start "clean", "app", "php", "images", "js", "css"
+  gulp.start "clean", "app", "icons", "php", "images", "js", "css"
 
 
 # Watch function of WordPress Theme Builder
@@ -69,3 +69,4 @@ gulp.task "watch", ->
   watch config.css.src,    -> gulp.start "css"
   watch config.images.src, -> gulp.start "images"
   watch config.js.coffee,  -> gulp.start "js"
+  watch config.icons.src,  -> gulp.start "icons"
