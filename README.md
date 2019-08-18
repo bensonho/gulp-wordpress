@@ -23,6 +23,17 @@ This script aims to improve the process of creating a wordpress theme from scrat
 
 Run in the directory above your `theme/` directory. A `wordpress/` directory will be created if it doesn't already exist.
 
+* `wptb init`
+  * Same as running `wptb theme-init`, `wptb wp-init` and `wptb`
+* `wptb theme-init`
+  * Initialize `theme/` directory
+* `wptb wp-init`
+  * Initialize `wordpress/` directory by downloding WordPress and WordPress plugins as specified in `config.yml`
+* `wptb wp-install-plugins`
+  * Install plugins specified in `config.yml`
 * `wptb`
+  * Compiles the theme
 * `wptb -e production`
+  * Specify the environment
 * `wptb watch`
+  * Watch `theme/` directory and recompile whenever a file changes
